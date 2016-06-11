@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="User Name:"
+            android:id="@+id/UserNamePrompt"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserNameInput"
+            android:layout_toRightOf="@+id/UserNamePrompt"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="10dp"
+            android:width="150dp"
+            android:text="user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Password:"
+            android:id="@+id/PasswordPrompt"
+            android:layout_below="@+id/UserNamePrompt"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/PasswordInput"
+            android:layout_below="@+id/UserNamePrompt"
+            android:layout_alignStart="@id/UserNameInput"
+            android:layout_alignEnd="@+id/UserNameInput"
+            android:text="password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Server Host:"
+            android:id="@+id/AddressPrompt"
+            android:layout_below="@+id/PasswordPrompt"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AddressInput"
+            android:layout_toRightOf="@+id/AddressPrompt"
+            android:layout_below="@+id/PasswordPrompt"
+            android:layout_alignStart="@id/UserNameInput"
+            android:layout_alignEnd="@+id/PasswordInput"
+            android:text="pandora.byu.edu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Server Port:"
+            android:id="@+id/PortPrompt"
+            android:layout_below="@+id/AddressPrompt"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PortInput"
+            android:layout_toRightOf="@+id/PortPrompt"
+            android:layout_below="@+id/AddressPrompt"
+            android:layout_alignStart="@id/UserNameInput"
+            android:layout_alignEnd="@+id/AddressInput"
+            android:text="8080" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:id="@+id/SignInButton"
+            android:layout_gravity="center"
+            android:layout_below="@+id/PortInput"
+            android:layout_alignEnd="@+id/PasswordPrompt" />
+
+    </RelativeLayout>
+</FrameLayout>
