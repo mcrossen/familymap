@@ -1,0 +1,20 @@
+Introduction
+
+FamilyMap is an Android application that provides a geographical view into your family history.
+One of the most exciting aspects of researching family history is discovering your origins.
+FamilyMap provides a detailed view into where you came from. 
+
+
+FamilyMap: A Quick Overview
+
+The FamilyMap Android application consists of six main views:
+  Main Activity (Login and Top-level map)
+  Map Activity (Lower-level maps)
+  Person Activity
+  Settings Activity
+  Filter Activity
+  Search Activity
+The FamilyMap Application uses two third party services:
+  FamilyMap Service - Used for user management and requesting data (See FamilyMap
+Service under Resources for more information)
+ Google Maps v2 for Android - Used for displaying maps
