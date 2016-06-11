@@ -19,4 +19,9 @@ The FamilyMap Application uses two third party services:
   Google Maps v2 for Android - Used for displaying maps
 
 
+The AndroidManifest.xml file is missing due to the sensitive api keys contained in it.
+
+
+For more information:
+
 https://students.cs.byu.edu/~cs240ta/spring2016/projects/family-map/FamilyMapSpecification.pdf
